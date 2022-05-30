@@ -9,5 +9,5 @@ def solution(s):
     # print(' '.join(list(map(str, ans))))
     return ' '.join(list(map(str, ans)))
 
-solution("1 2 3 5")
-solution("-3 -2 1 5")
+# solution("1 2 3 5")
+# solution("-3 -2 1 5")
