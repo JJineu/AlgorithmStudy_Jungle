@@ -3,8 +3,8 @@ input = sys.stdin.readline
 
 def solution(s):
     nums = list(map(int, s.split()))
-    nums.sort()
-    ans = [nums[0], nums[-1]]
+    # nums.sort()
+    ans = [min(nums), max(nums)]
     
     # print(' '.join(list(map(str, ans))))
     return ' '.join(list(map(str, ans)))
