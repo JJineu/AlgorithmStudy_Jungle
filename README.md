@@ -16,7 +16,7 @@
 - 리뷰받은 사람이 다음날 폴더 세팅 - [템플릿](https://github.com/SWJungle4A/morning_algorithm_study/issues/5)
 
 ```
-$ git clone https://github.com/SWJungle4A/morning_algorithm_study.git
+$ git clone https://github.com/SWJungle4A/algorithm-study.git
 
 초기 세팅 
 $ git pull origin master
