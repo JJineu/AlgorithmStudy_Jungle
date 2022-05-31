@@ -1,3 +1,4 @@
+// 오답
 from itertools import permutations
 def solution(orders, course):
     # orders : 각 손님들이 주문한 단품 메뉴들이 문자열 형식으로 담긴 배열
