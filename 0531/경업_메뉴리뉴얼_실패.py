@@ -15,7 +15,7 @@ def solution(orders, course):
 
     alphabet_count = [(count[x], alphabet[x]) for x in range(26)]
     alphabet_count.sort(reverse=True)
-    print(alphabet_count)    
+    # print(alphabet_count)    
 
     ans = []
     for cnt in course:
@@ -66,5 +66,5 @@ def solution(orders, course):
     return
 
 solution(["ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"], [2,3,4])
-# solution(["ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"], [2,3,5])
-# solution(["XYZ", "XWY", "WXA"], [2,3,4])
+solution(["ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"], [2,3,5])
+solution(["XYZ", "XWY", "WXA"], [2,3,4])
