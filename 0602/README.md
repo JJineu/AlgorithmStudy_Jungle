@@ -1,4 +1,4 @@
-## 문제이름
+## 짝지어 제거하기
 - 진행 시간: 19:00 ~ 20:00
 - [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12973)
 - [리뷰 링크]()
