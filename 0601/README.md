@@ -1,4 +1,4 @@
-## 문제이름
+## 최솟값 만들기
 - 진행 시간: 19:00 ~ 20:00
 - [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12941)
 - [리뷰 링크]()
