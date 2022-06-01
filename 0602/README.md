@@ -1,6 +1,6 @@
-## 짝지어 제거하기
+## 튜플
 - 진행 시간: 19:00 ~ 20:00
-- [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/12973)
+- [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/64065)
 - [리뷰 링크]()
 
 |이름|참가|비고|
