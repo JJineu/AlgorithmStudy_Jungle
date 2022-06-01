@@ -2,7 +2,7 @@
 def solution(A,B):
     answer = 0
 
-    A.sort
+    A.sort() # sort 뒤에 () 할 것
     B.sort(reverse = True)
     for i in range(len(A)):
         answer += A[i]*B[i]
