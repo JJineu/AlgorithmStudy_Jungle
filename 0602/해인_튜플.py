@@ -22,6 +22,5 @@ def solution(s):
                 continue
             if slist[i][j] not in answer:
                 answer.append(slist[i][j])
-    print(answer)
     
     return answer
