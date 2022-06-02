@@ -21,7 +21,8 @@ def solution(A,B):
     # visitedB = [False] * (L+1)
 
     # for i in range(L):
-    #     for j in range(L):
+    #     for j in range(len(A)-1, -1, -1):
+    
     #         visitedB[j] = 1
     #         if A[i] * B[j] < arr[i]:
     #             arr[i] = A[i] * B[j]
