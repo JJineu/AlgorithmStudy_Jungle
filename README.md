@@ -10,6 +10,9 @@
 |진행일자|문제|비고|
 |-----|------|-----|
 |22.05.30 월|연습문제 > [lv.2 최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939) |Programmers|
+|22.05.31 화|2021 카카오 블라인드 > [lv.2 메뉴리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) |Programmers|
+|22.06.01 수|연습문제 > [lv.2 최솟값만들기](https://programmers.co.kr/learn/courses/30/lessons/12941) |Programmers|
+|22.06.02 목|2019 카카오 인턴십 > [lv.2 튜플](https://programmers.co.kr/learn/courses/30/lessons/64065) |Programmers|
 
 - 해당 요일 폴더에 이름으로 풀이 업로드
     - e.g. : /220523/`{이름}_{문제이름}`.py
