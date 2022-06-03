@@ -26,8 +26,9 @@ def solution(slist):
                         depth += 1
                         check(dx, dy, depth)
                     else: return True #벽이면
-            return True
+            # return True
         
+        Flag = False
         for x in range(5):
             for y in range(5):
                 if room[x][y] == 'P':
@@ -35,12 +36,20 @@ def solution(slist):
                         continue
                     else:
                         answer.append(0)
+                        Flag = True
                         break
-        answer.append(1)
+            if Flag:
+                break
+        else: 
+            answer.append(1)
 
+    print(answer)
     return answer
-    # print(answer)
+    
 
 
 
 solution([["POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"], ["POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"], ["PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"], ["OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"], ["PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"]])
+solution([["OPXPO", "OOOOO", "OOOOO", "OOOOO", "OOOOO"], ["XXXXX", "XXXXX", "XXXXX", "XXXXX", "XXXXX"], ["PPPPP", "PPPPP", "PPPPP", "PPPPP", "PPPPP"], ["OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"], ["PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"]])
+# solution(["OPXPO", "OOOOO", "OOOOO", "OOOOO", "OOOOO"])
+# ["OOOOO", "OOOOO", "OOOOO", "OOOOO", "OOOOO"]
