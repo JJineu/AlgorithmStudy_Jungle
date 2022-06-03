@@ -14,6 +14,9 @@ def solution(places):
                 if place[i][j] == "P":
                     people.append((i, j))
         
+        # 중복 연산 방지를 위한 visited
+        visited = [[0 for _ in range(5)] for _ in range(5)]
+        
         # flag 1: 거리두기 지킴, 0: 안지킴
         flag = 1 
 
@@ -23,6 +26,7 @@ def solution(places):
                 break
 
             x, y = people.popleft()
+            visited[x][y] = 1
 
             for i in range(4):
                 if flag == 0: # 규칙 안지킨 회의실임이 확인되었으면 break
@@ -47,11 +51,13 @@ def solution(places):
                                 continue
 
                             if 0 <= nnx < 5 and 0 <= nny < 5:
+                                if visited[nnx][nny] == 1:
+                                    continue
                                 if place[nnx][nny] == 'P':
                                     flag = 0 # 규칙 안지킨 회의실이다
                                     break
         answer.append(flag)
-    
+    print(answer)
     return answer
 
 solution([["POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"], 
