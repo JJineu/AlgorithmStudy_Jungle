@@ -53,6 +53,7 @@ def bfs(p):
                         queue.append([ny, nx])
                         visited[ny][nx] = 1
                         distance[ny][nx] = distance[y][x] + 1
+                        
                     elif p[ny][nx] == 'P' and distance[y][x] <= 1:
                         return 0
     return 1
