@@ -16,21 +16,16 @@ def solution(s):
     for i in range(n):
         if ord(s[i]) > 60:
             stack.append(str(s[i]))
-            tmp = ''.join(stack)
-            if tmp in d:
-                answer.append(d[tmp])
-                while stack:
-                    stack.pop()
         else:
-            if stack:
-                tmp = ''.join(stack)
-                answer.append(d[tmp])
-                while stack:
-                    stack.pop()
             answer.append(str(s[i]))
 
+        tmp = ''.join(stack)
+        if tmp in d:
+            answer.append(d[tmp])
+            stack = []
+    
     print(int(''.join(list(map(str, answer)))))
-    return int(''.join(list(map(str, answer))))
+    # return int(''.join(list(map(str, answer))))
 
 
 solution("one4seveneight")
