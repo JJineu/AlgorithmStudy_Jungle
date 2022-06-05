@@ -15,17 +15,15 @@ def solution(slist):
             if len(letters) > 0:
                 letters.append(i)
                 n_string = ''.join(letters)
-                # print(n_string)
                 if n_string in numbers.values():
-                    # print([k for k, v in numbers.items() if v == n_string])
                     answer.append(*[k for k, v in numbers.items() if v == n_string])
                     letters.clear()
             else:
                 letters.append(i)
-                # print(letters)
     return int(''.join(list(map(str,answer))))
     # print(*answer, sep = '')
     
+
 
 solution("one4")
 solution("2three45sixseven")
