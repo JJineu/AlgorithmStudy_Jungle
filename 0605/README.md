@@ -1,6 +1,6 @@
-## 거리두기_확인하기
+## 숫자 문자열과 영단어
 - 진행 시간: 19:00 ~ 20:00
-- [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/81302)
+- [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/81301)
 - [리뷰 링크]()
 
 |이름|참가|비고|
