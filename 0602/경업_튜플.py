@@ -1,6 +1,10 @@
-
+import re
+from collections import Counter
 
 def solution(s:str):
+    # s = Counter(re.findall('\d+', s))
+    # print(s)
+    
     s = s.replace("},","}.")
     ss = s[1:-1].split('.')
     # print(ss)
@@ -16,7 +20,7 @@ def solution(s:str):
     for i in range(1, len(ss)):
         ans.append(int(list(ss[i]-ss[i-1])[0]))
 
-    return ans
+    print(ans)
 
-# solution("{{2},{2,1},{2,1,3},{2,1,3,4}}")
-# solution("{{1,2,3},{2,1},{1,2,4,3},{2}}")
+solution("{{2},{21,12},{2,1,3},{2,1,3,4}}")
+solution("{{1,2,3},{2,1},{1,2,4,3},{2}}")
