@@ -22,7 +22,7 @@ def solution(numbers, target):
         if k == target:
             cnt += 1
 
-    print(cnt)
+    # print(cnt)
     return cnt
         
     #     stackA.append('+' + str(i))
