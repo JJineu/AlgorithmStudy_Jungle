@@ -1,6 +1,6 @@
 ## 폰켓몬
 - 진행 시간: 16:00 ~ 17:00
-- [문제 링크]()
+- [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/1845)
 - [리뷰 링크]()
 
 |이름|참가|비고|
