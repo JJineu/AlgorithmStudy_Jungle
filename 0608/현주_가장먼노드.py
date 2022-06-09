@@ -12,13 +12,13 @@ def solution(n, edge):
     big = sys.maxsize
     distance = [0, 0] + [big] * (n-1) #1에서 각 노드로 오는 거리 저장
     
+        
     def bfs(i, count):
-        q = deque()
-        q.append((i, count))
-     
+        q = deque([(i, count)])
+        # q.append((i, count))
+    
         while q:
             node, dist = q.popleft()
-
             for j in graph[node]:
                 if distance[j] > dist:
                     distance[j] = dist
@@ -28,9 +28,10 @@ def solution(n, edge):
     bfs(1, 1)
     biggest = max(distance)
     answer = distance.count(biggest)
-    return answer
+    
     # print(distance.count(biggest))
-        
+    return answer
+#나는 if distance를 썼기 때문에 visited 없어도 됨...    
     
 
     # return answer
