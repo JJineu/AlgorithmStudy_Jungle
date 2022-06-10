@@ -1,8 +1,6 @@
 def solution(m, n, puddles):
-    answer = 0
-
     dp = [[-1 for _ in range(n+1)] for _ in range(m+1)]
-    # dp[x][y]: flag - 오른쪽, 아래쪽
+    
     dp[1][1] = 1
     def solution(x, y):
         if x < 1 or y < 1:
