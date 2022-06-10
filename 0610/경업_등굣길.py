@@ -1,7 +1,7 @@
 def solution(m, n, puddles):
     answer = 0
 
-    dp = [[-1 for _ in range(m+1)] for _ in range(n+1)]
+    dp = [[-1 for _ in range(n+1)] for _ in range(m+1)]
     # dp[x][y]: flag - 오른쪽, 아래쪽
     dp[1][1] = 1
     def solution(x, y):
@@ -18,9 +18,9 @@ def solution(m, n, puddles):
         dp[x][y] = (up + left) % 1000000007
         return dp[x][y]
 
-    solution(n, m)
-    # for d in dp:
-    #     print(d)
-    print(dp[n][m])
+    solution(m, n)
+    for d in dp:
+        print(d)
+    print(dp[m][n])
 
 solution(4, 3, [[2,2]])
