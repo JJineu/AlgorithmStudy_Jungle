@@ -9,8 +9,7 @@ def solution(nums):
         else:
             num[i] = 1
     # {3: 2, 1: 1, 2: 1}
-    
-    answer = 0
+
     cnt = 0
     for k in num:
         if num[k] >= 1:
