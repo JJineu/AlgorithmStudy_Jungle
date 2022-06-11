@@ -5,7 +5,7 @@ def solution(n, edge):
     graph = [[] for _ in range(n+1)]
     visit = [0 for _ in range(n+1)]
     dist = [0 for _ in range(n+1)]
-    m = len(graph)
+
     for e in edge:
         graph[e[0]].append(e[1])
         graph[e[1]].append(e[0])
@@ -16,6 +16,7 @@ def solution(n, edge):
     # 1번 노드 방문처리
     visit[1] = 1
     queue = deque()
+    print(queue)
     queue.append((1, 0)) # (node, distance)
 
     while queue:
