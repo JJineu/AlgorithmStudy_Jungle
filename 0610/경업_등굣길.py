@@ -17,8 +17,8 @@ def solution(m, n, puddles):
         return dp[x][y]
 
     solution(m, n)
-    # for d in dp:
-    #     print(d)
+    for d in dp:
+        print(d)
     # print(dp[m][n])
     return dp[m][n]
 
