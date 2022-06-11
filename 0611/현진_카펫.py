@@ -3,7 +3,7 @@ def solution(brown, yellow):
     answer = []
 
     s = brown + yellow
-    for row in range(3, int(s**0.5)+1):
+    for row in range(3, s//2+1):
         col = int(s/row)
 
         a = col*2 + row*2 -2
