@@ -13,7 +13,7 @@ def solution(priorities:list, location):
             print(cnt)
             return cnt
 
-        tmp = list(va for id, va in priorities)        
+        tmp = list(v for i, v in priorities)        
         if val < max(tmp):
             priorities.append((idx, val))
         else:
