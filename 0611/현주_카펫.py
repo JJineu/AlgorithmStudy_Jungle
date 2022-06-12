@@ -7,7 +7,7 @@ def solution(brown, yellow):
         if yellow%i == 0:
             row, col = yellow//i, i
             if 2*(row+2) + 2*(col+2) - 4 == brown:
-                print([row+2, col+2])
+                # print([row+2, col+2])
                 return [row+2, col+2]
     #         divisors.append((yellow//i, i))
     # for row, col in divisors:
