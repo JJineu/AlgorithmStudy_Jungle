@@ -16,9 +16,9 @@ def solution(progresses, speeds):
                 count = 0
             time += 1
     answer.append(count) #마지막까지 끝났을 때
+    print(answer)
     return answer
             
-    # print(answer)
 
 
 solution([93, 30, 55], [1, 30, 5])
