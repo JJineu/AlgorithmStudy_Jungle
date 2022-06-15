@@ -2,7 +2,6 @@ import sys
 input = sys.stdin.readline
 
 def solution(brown, yellow):
-    answer = []
     s = brown + yellow
 
     lst = []

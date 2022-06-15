@@ -23,7 +23,7 @@ def solution(n, k):
                 break
         # print(f'    answer:{answer}, i: {i}, k: {k}, fac: {fac}')
         n -= 1
-    # print(answer)
+        print(answer)
     return answer
 
 solution(3, 5) # 3, 1, 2
