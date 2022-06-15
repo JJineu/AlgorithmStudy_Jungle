@@ -8,21 +8,20 @@ def solution(n, works):
 
     while n:
         n -= 1
-        if not queue:
-            break
 
         tmp = heappop(queue)
         if tmp:
             tmp += 1
             heappush(queue, tmp)
         else:
-            heappush(queue, 0)
+            break
 
     for num in queue:
         answer += num**2
 
+    # print(answer)
     return answer
 
-solution([4, 3, 3], 4) # 12
-solution([2, 1, 2], 1) # 6
-solution([1, 1], 3) # 0
+solution(4, [4, 3, 3]) # 12
+solution(1, [2, 1, 2]) # 6
+solution(3, [1, 1]) # 0
