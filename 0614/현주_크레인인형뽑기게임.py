@@ -1,7 +1,7 @@
 def solution(board, moves):
-    toys = [[] for _ in range(len(board[0]))]
-    for i in range(len(board[0])):
-        for j in range(len(board[0])):
+    toys = [[] for _ in range(len(board))]
+    for i in range(len(board)):
+        for j in range(len(board)):
             toys[i].append(board[j][i])
     # print(toys)
 
