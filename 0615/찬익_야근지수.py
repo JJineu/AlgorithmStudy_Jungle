@@ -17,7 +17,7 @@ def solution(n, works):
             works[i]-=1
             n -= 1
 
-    for i in works:
-        answer+=i*i 
+    for j in works:
+        answer += j ** 2
 
     return answer
