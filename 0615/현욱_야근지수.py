@@ -1,5 +1,5 @@
+# 마지막 케이스 시간초과 / 효율성은 통과함
 def solution(n, works):
-    works.sort(reverse=True)
     count = n
     sum = 0
     maxValue = max(works)
