@@ -4,7 +4,7 @@ def solution(n, computers):
     # print(parent)
     
     for i in range(n):
-        for j in range(n):
+        for j in range(i,n):
             if computers[i][j] == 1:
                 union(i+1,j+1,parent)
                 # print(parent)                
