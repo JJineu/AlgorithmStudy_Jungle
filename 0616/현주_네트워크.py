@@ -8,9 +8,8 @@ def solution(n, computers):
     def dfs(i):
         visited[i] = 1
         for j in range(len(computers)):
-            if j != i and computers[i][j] == 1:
-                if not visited[j]:
-                    dfs(j)
+            if j != i and computers[i][j] == 1 and not visited[j]:
+                dfs(j)
 
     for i in range(n):
         if not visited[i]:
