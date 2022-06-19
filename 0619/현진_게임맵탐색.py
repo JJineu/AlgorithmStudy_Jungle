@@ -3,7 +3,7 @@ from collections import deque
 def solution(maps):
     n = len(maps)
     m = len(maps[0])
-    visit = list([0]*m for _ in range(n))
+    # visit = list([0]*m for _ in range(n))
     q = deque([[0,0]])
     # q = [[0,0]]
     dx = [-1,1,0,0]
