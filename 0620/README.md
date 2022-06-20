@@ -1,5 +1,5 @@
 
-## 메뉴리뉴얼
+## 입국심사
 - 진행 시간: 19:00 ~ 20:00
 - [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/43238)
 - [리뷰 링크]()
