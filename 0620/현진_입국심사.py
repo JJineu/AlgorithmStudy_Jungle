@@ -3,6 +3,8 @@ def solution(n, times):
     
     start = 0
     end = max(times)*n
+    # end = (n*sum(times)//len(times))
+    
     while start <= end:
         mid = (start+end)//2
         cnt = 0
@@ -15,7 +17,5 @@ def solution(n, times):
             answer = mid
         else:
             start = mid +1
-   
-    # print(answer)
-    return answer
 
+    return answer
