@@ -1,37 +1,32 @@
 def solution(tickets):
 
-    def dfs(t, v):
-        # used[t] = 1
+    def dfs(ticket, v):
+
         route.append(v)
-        # print(f'used = {used}')
-        # print(f'route = {route}')
 
         if len(route)-1 == len(tickets):
-            answer.append(route)
-            print(f'answer = {answer}')
+            route_copy = route.copy()
+            answer.append(route_copy)
             return
 
         for i in range(len(tickets)):
-            # print(f'i = {i}')
-            # print(tickets[i][0])
-            # print(used)
-            if tickets[i][0] == v and used[i] == 0:
-                used[t] = 1
+            if tickets[i][0] == v and used[i] == 0: #여기서 출발해서 갈 곳이 있다
+                used[i] = 1
                 dfs(i, tickets[i][1])
                 route.pop()
-                used[t] = 0
-                # print(f'answer pop됐니...? {answer}')
-                
+                used[i] = 0
+            
         return 
 
     answer = []
-    for t in range(len(tickets)):
-        print(f'dfs({t, tickets[t][0]}) 들어감')
-        route = []
-        used = [0] * len(tickets)
-        dfs(t, tickets[t][0])
+    # for t in range(len(tickets)):
+    route = []
+    used = [0] * len(tickets)
+    dfs(0, tickets[0][0])
 
-    print(answer)
+    #print(sorted(answer)[0])
+    return sorted(answer)[0]
 
-solution([["ICN", "JFK"], ["HND", "IAD"], ["JFK", "HND"]])
-# solution([["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], ["ATL", "ICN"], ["ATL","SFO"]])
+
+# solution([["ICN", "JFK"], ["HND", "IAD"], ["JFK", "HND"]])
+solution([["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], ["ATL", "ICN"], ["ATL","SFO"]])
