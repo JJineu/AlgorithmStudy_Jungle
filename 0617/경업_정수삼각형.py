@@ -17,12 +17,12 @@ def solution(triangle):
         dp[i][j] = max(left, right) + triangle[i][j]
         return dp[i][j]
 
-    dp[0][0] = triangle[0][0]
+    # dp[0][0] = triangle[0][0]
     for k in range(n):
         recur(n-1, k)
     
-    # for d in dp:
-    #     print(d)
+    for d in dp:
+        print(d)
 
     return max(dp[-1])
 
