@@ -1,5 +1,5 @@
 
-## 메뉴리뉴얼
+## 게임 맵 최단거리
 - 진행 시간: 19:00 ~ 20:00
 - [문제 링크](https://programmers.co.kr/learn/courses/30/lessons/1844)
 - [리뷰 링크]()
