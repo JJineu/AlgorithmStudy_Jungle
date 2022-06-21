@@ -20,7 +20,7 @@ def solution(words:list):
         cnt_overlapped[i] = count(words[i], words[i+1])
 
     for i in range(n):
-        if i == 0:
+        if i == 0: # 맨 앞
             if not cnt_overlapped[i]:
                 answer += 1
             else:
