@@ -2,7 +2,7 @@ def solution(n, times):
     answer = 0
     
     start = 0
-    end = max(times)*n
+    end = min(times)*n
     # end = (n*sum(times)//len(times))
     
     while start <= end:
