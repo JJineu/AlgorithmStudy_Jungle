@@ -1,10 +1,9 @@
-'''테케 7, 8 런타임에러'''
-
-import sys
+'''right = 1e6 이런걸로 하면
+    테케 7, 8 런타임에러'''
 
 def solution(n, times):
     left = 0
-    right = 1e10
+    right = max(times)*n #포인트!!
 
     while left <= right:
         mid = (left+right)//2
