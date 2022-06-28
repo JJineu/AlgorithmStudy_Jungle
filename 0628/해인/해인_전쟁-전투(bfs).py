@@ -1,3 +1,6 @@
+# bfs 풀이는 시간이 108ms 나옴
+# dfs 풀이는 시간이 88ms 나옴
+
 import sys
 input = sys.stdin.readline
 from collections import deque
