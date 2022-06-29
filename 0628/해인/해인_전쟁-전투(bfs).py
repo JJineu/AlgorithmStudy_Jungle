@@ -30,7 +30,6 @@ def bfs(x, y, color):
                     q.append((nx, ny))
                     visited[nx][ny] = 1 # visited 처리 (2)
                     cnt += 1
-
     return cnt
 
 
