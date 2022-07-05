@@ -6,9 +6,9 @@ N = int(input())
 # 2<= S <= 1000
 
 q = deque()
-q.append((1,1))
+q.append((1,0))
 dist = [[-1]*(N+1) for _ in range(N+1)]
-
+dist[1][0] = 0
 #꼭 카운트가 커지는 순으로 들어가는 게 아니라 그저 dp일 뿐...
 #최초의 한 번만 업데이트하기 때문에 그 dist[s][c]의 최소값일 수밖에 없음
 #또한, 세 개의 모션은 독립적임. 꼭 세 개가 번갈아가며 연속적으로 수행될 필요 X.
@@ -32,4 +32,5 @@ for i in range(N+1):
     if dist[N][i] != -1:
         if answer == -1 or answer > dist[N][i]:
             answer = dist[N][i]
+
 print(answer)
