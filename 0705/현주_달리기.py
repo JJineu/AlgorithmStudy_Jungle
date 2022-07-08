@@ -32,4 +32,9 @@ def bfs():
                 nx += dx[i]
                 ny += dy[i]
                 nk += 1
+
 bfs()
+if visited[x2][y2]== 1004:
+    print(-1)
+else:
+    print(visited[x2][y2])
