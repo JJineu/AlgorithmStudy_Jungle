@@ -1,3 +1,4 @@
+# 풀이 1
 def solution(strings, n):
     word = dict()
     tmp = []
@@ -23,3 +24,8 @@ def solution(strings, n):
             answer.append(j)
     
     return answer
+
+# 풀이 2
+def solution(strings, n):
+    strings = sorted(strings)
+    return sorted(strings, key = lambda x:(x[n]))
