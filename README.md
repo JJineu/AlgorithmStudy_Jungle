@@ -1,4 +1,4 @@
-# 🌙 해인 Algorithm Study
+# 🌙 Algorithm Study
 
 ## 💡Rules
 ### 진행시간 : 매일  오후 07:00 ~ 08:00
